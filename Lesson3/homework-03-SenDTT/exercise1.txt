@@ -1,0 +1,26 @@
+Exercise 01
+1. Explain the difference between primitive types and object references in JavaScript.
+- primitive types: passed by value and Immutable. These include number, string, boolean, null, undefined, symbol, and bigint.
+It means their values cannot be changed once assigned. 
+
+- object references: passed by reference, not Immutable by default and Shallow or Deep copy. 
+These include objects like arrays, functions, and other complex data structures.
+It means variables store a reference to the same memory location.
+
+2. What are the advantage for using TypeScript?
+- Typescript offers static typing, which helps catch errors at compiler time, making code more reliable.
+
+3. How can we run TypeScript code in the browser?
+- We should use compiler `tsc` transpile .ts files to .js files, then including .js files into .html to run in the browser.
+
+4. What are the differences between `let` and `const`? and what is their scope?
+- `let` and `const` are both block-scoped.
+- `let` allows variable reassignment.
+- `const` prevents reassignment but allows mutation in objects or arrays.
+
+5. What is an IIFE and write a snippet code for one.
+An IIFE (Immediately Invoked Function Expression) is a function that runs as soon as it is defined.
+
+(function() {
+    console.log("This is an example for an IIFE");
+})();

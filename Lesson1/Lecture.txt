@@ -1,0 +1,26 @@
+Here’s a brief summary of each term:
+
+1. Client-side & Server-side:
+   - Client-side: Refers to operations performed on the user's device (browser). This includes rendering HTML, CSS, and JavaScript.
+   - Server-side: Refers to operations performed on the server, such as database queries and handling business logic.
+
+2. IP (Internet Protocol):
+   - IP is a protocol responsible for addressing and routing packets of data so they can travel across networks and reach the correct destination.
+
+3. TCP (Transmission Control Protocol):
+   - TCP is a protocol that ensures reliable, ordered, and error-checked delivery of data between applications over a network.
+
+4. Multiplexing:
+   - This is a technique used in networking to combine multiple signals or data streams into one to efficiently use bandwidth.
+
+5. PNS (Push Notification Service):
+   - PNS refers to a system that sends notifications from servers directly to client devices, typically used by apps to notify users of new content or updates.
+
+6. HTTP (Hypertext Transfer Protocol):
+   - HTTP is the protocol used for transferring web pages on the internet. It defines how data is formatted and transmitted and how servers and browsers respond to various commands.
+
+7. HTML (HyperText Markup Language):
+   - HTML is the standard markup language used to create web pages. It structures content and design for browsers to render.
+
+8. URL (Uniform Resource Locator):
+   - A URL is the address used to access resources on the web, including web pages, images, and files, defining both the resource location and protocol.

@@ -1,0 +1,15 @@
+- Stateless
+- Restful
+- Express: N-tier, 
+- Request Handler: pipeline (middleware, routes, error handler)
+
+
+Here's a quick breakdown of each:
+
+- Stateless: In a stateless architecture, each request from a client to a server must contain all the information needed to understand and process the request, as the server does not store any client context between requests.
+
+- RESTful: Refers to APIs or services that follow the principles of REST (Representational State Transfer), using standard HTTP methods (GET, POST, PUT, DELETE) and stateless communication to structure and manage resources in a consistent, predictable way.
+
+- Express: N-tier: In Express.js, an N-tier architecture separates an application into different layers, like presentation (UI), business logic, and data access, to organize code, improve scalability, and manage complexity.
+
+- Request Handler: Pipeline (Middleware, Routes, Error Handler): In Express, the request-handling pipeline consists of middleware functions that process incoming requests in sequence. These include routes (to define endpoints), middleware (for authentication, parsing, etc.), and an error handler (to manage errors and send appropriate responses).

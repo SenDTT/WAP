@@ -1,0 +1,22 @@
+{
+  "name": "homework-07-sendtt",
+  "version": "1.0.0",
+  "description": "[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/wdj-J8w2) [![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=17032457) ## CS472-Homework-07-Node-Modules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@sendgrid/mail": "^8.1.4",
+    "@types/node": "^22.9.0",
+    "dotenv": "^16.4.5",
+    "nanoid": "^5.0.8",
+    "node-cron": "^3.0.3",
+    "sharp": "^0.33.5",
+    "tsx": "^4.19.2"
+  },
+  "type": "module"
+}

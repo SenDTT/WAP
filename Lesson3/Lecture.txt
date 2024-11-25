@@ -1,0 +1,6 @@
+1. Why TypeScript?
+2. Utility TypeScript
+
+Pick<Person, "firstname" | "lastname">; means only pick "firstname" and "lastname" attributes
+Partial<Person>; means every attributes are optional
+Omit<Person, "age" | "dob">; means create new type from Person without age and dob attributes.

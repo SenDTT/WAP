@@ -1,0 +1,5 @@
+React Communication
+
+- State Lefting: Lifting the state up.
+- State Drilling: Drilling the state down.
+- Global state: use Context to store global state.

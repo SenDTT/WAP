@@ -1,0 +1,4 @@
+- Async is in programming means delegration a task for other to run it.
+- Evaluate this in arrow function.
+- Microtask queue (Promise) is higher priority than Macrotask queue (setTimeout)
+- async keyword implicitly wraps the returned value as Promise

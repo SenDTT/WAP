@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.flex-container {
+    @apply flex flex-row justify-between items-center p-6 gap-4 bg-gray-300;
+    .flex-item {
+        @apply bg-green-600 rounded-md text-white p-6;
+    }
+
+    .flex-item:last-child {
+        @apply list-none sm:flex flex-row justify-between items-center gap-4 hidden;
+    }
+}
+
+.grid-container {
+    @apply grid sm:grid-cols-3 grid-cols-1 sm:grid-rows-3 grid-rows-4 gap-4 bg-gray-100 p-6;
+
+    div {
+        @apply bg-blue-500 p-6 rounded-md;
+    }
+
+    .grid-header {
+        @apply sm:col-span-3 row-span-1;
+    }
+    .grid-nav {
+        @apply sm:col-span-1 sm:row-span-2 row-span-1;
+    }
+    .grid-content {
+        @apply sm:col-span-2 row-span-1;
+    }
+
+    .grid-footer {
+        @apply sm:col-span-2 row-span-1;
+    }
+}
+
+.position-relative {
+    @apply w-full flex justify-center items-center gap-2 relative bg-yellow-300 h-[200px] mt-5;
+
+    .position-absolute {
+        @apply absolute bg-orange-500 text-white w-4/5 bottom-3 px-14 py-2 text-center rounded-md;
+    }
+}
+
+/* My Porfolio */
+.main {
+    @apply w-full bg-slate-200 py-6;
+
+    .my-container {
+        @apply container w-3/5 mx-auto bg-white p-14;
+
+        .my-header {
+            @apply text-center text-xl font-bold font-mono uppercase tracking-[.2em];
+        }
+
+        .my-content {
+            @apply flex flex-col justify-center gap-6 divide-solid divide-y divide-gray-900;
+
+            .my-items {
+                @apply flex flex-col justify-center items-center text-left gap-2 pt-4 font-light;
+
+                div {
+                    @apply w-full;
+                }
+            }
+
+            .my-items:first-child div {
+                @apply text-center font-light text-sm gap-2 flex flex-row mx-auto w-4/5 justify-center;
+            }
+        }
+    }
+}
+
+.my-heading {
+    @apply uppercase text-center font-bold;
+}
+
+.my-listing {
+    @apply text-left list-disc list-inside;
+}
+
+.my-form {
+    @apply my-4 w-1/2 mx-auto gap-4 flex flex-col justify-between items-center;
+}
+
+.my-form-row1 {
+    @apply flex flex-row gap-4 justify-between;
+}
+
+.my-form-group {
+    @apply flex flex-col justify-between items-start gap-2 w-full;
+
+    .my-label {
+        @apply font-normal text-left w-full;
+    }
+
+    .my-input {
+        @apply border border-gray-200 rounded-sm h-10 w-full;
+    }
+}
+
+.my-button-group {
+    @apply flex flex-row justify-end col-start-3 text-right;
+
+    .my-button {
+        @apply border-blue-500 bg-blue-500 text-white px-4 py-2 rounded-md text-center hover:bg-blue-600;
+    }
+}

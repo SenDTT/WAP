@@ -1,0 +1,2 @@
+- in the POLL, nextTick -> Microtask -> the event loop
+- in promise, Microtask -> nextTick -> the event loop

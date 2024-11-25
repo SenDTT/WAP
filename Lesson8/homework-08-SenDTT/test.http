@@ -1,0 +1,149 @@
+GET http://localhost:3000/addition/2/3
+
+###
+GET http://localhost:3000/addition/?a=3&b=3
+
+###
+POST http://localhost:3000/addition
+Content-Type: application/json
+
+{"a": 2, "b": 3}
+
+###
+POST http://localhost:3000/addition
+Content-Type: application/x-www-form-urlencoded
+
+a=3&b=3
+
+###
+GET http://localhost:3000/subtraction/2/3
+
+###
+GET http://localhost:3000/subtraction/?a=3&b=3
+
+###
+POST http://localhost:3000/subtraction
+Content-Type: application/json
+
+{"a": 2, "b": 3}
+
+###
+POST http://localhost:3000/subtraction
+Content-Type: application/x-www-form-urlencoded
+
+a=3&b=3
+
+###
+GET http://localhost:3000/multiplication/2/3
+
+###
+GET http://localhost:3000/multiplication/?a=3&b=3
+
+###
+POST http://localhost:3000/multiplication
+Content-Type: application/json
+
+{"a": 2, "b": 3}
+
+###
+POST http://localhost:3000/multiplication
+Content-Type: application/x-www-form-urlencoded
+
+a=3&b=3
+
+###
+GET http://localhost:3000/division/2/3
+
+###
+GET http://localhost:3000/division/?a=3&b=3
+
+###
+POST http://localhost:3000/division
+Content-Type: application/json
+
+{"a": 2, "b": 3}
+
+###
+POST http://localhost:3000/division
+Content-Type: application/x-www-form-urlencoded
+
+a=3&b=3
+
+###
+GET http://localhost:3000/modulus/2/3
+
+###
+GET http://localhost:3000/modulus/?a=3&b=3
+
+###
+POST http://localhost:3000/modulus
+Content-Type: application/json
+
+{"a": 2, "b": 3}
+
+###
+POST http://localhost:3000/modulus
+Content-Type: application/x-www-form-urlencoded
+
+a=3&b=3
+
+###
+GET http://localhost:3000/add/2/3
+
+###
+GET http://localhost:3000/division/2/0
+
+###
+GET http://localhost:3000/division/?a=3&b=0
+
+
+////// Exercise 2
+###
+POST http://localhost:3000/numbers/1
+Content-Type: application/json
+
+{}
+###
+POST http://localhost:3000/numbers/2
+Content-Type: application/json
+
+{}
+###
+POST http://localhost:3000/numbers/3
+Content-Type: application/json
+
+{}
+###
+POST http://localhost:3000/numbers/4
+Content-Type: application/json
+
+{}
+
+###
+GET http://localhost:3000/numbers/
+
+###
+GET http://localhost:3000/numbers/2
+
+### 
+DELETE http://localhost:3000/numbers/3
+Content-Type: application/json
+
+{}
+
+### 
+PUT http://localhost:3000/numbers/1/9
+Content-Type: application/json
+
+{}
+
+###
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    user: {
+        "firstName": "Sen",
+        "lastName": "Doan",
+    }
+}

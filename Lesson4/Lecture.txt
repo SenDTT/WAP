@@ -1,0 +1,2 @@
+- Hosting only occurs for statement function, not for expresses function.
+- the instance of a class only hold properties.

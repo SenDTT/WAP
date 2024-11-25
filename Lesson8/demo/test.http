@@ -1,0 +1,3 @@
+GET http://localhost:3000/books/13?lunch=tofu
+x-class: getBook
+

@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.switch {
+  @apply relative inline-block w-12 h-5;
+}
+
+.switch input {
+  @apply opacity-0 h-0 w-0;
+}
+
+.slider {
+  @apply absolute cursor-pointer top-0 bottom-0 left-0 right-0 bg-gray-300;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  @apply absolute h-3 w-3 left-1 bottom-1 bg-white;
+  content: "";
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  @apply bg-green-600;
+}
+
+input:focus + .slider {
+  @apply shadow-sm shadow-green-300;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  @apply rounded-[34px];
+}
+
+.slider.round:before {
+  @apply rounded-[50%];
+}
+
+.out-of-stock {
+  @apply text-red-600;
+}
+
+.in-stock {
+  @apply text-green-600;
+}
+
+.tr-body {
+  @apply flex flex-row justify-start gap-4 items-center py-2 my-2 border-t border-t-green-700;
+}
+
+.td-body {
+  @apply text-center min-w-20;
+}
+
+.products-table {
+  @apply w-4/5 mx-auto m-6 flex flex-col justify-center items-center gap-2;
+}
+
+.tr-head {
+  @apply flex flex-row justify-start gap-4 items-center;
+}
+
+.Products-List-App {
+  @apply mt-10;
+}

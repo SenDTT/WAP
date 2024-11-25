@@ -1,0 +1,88 @@
+/* Part 1: Flexbox */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: lightgrey;
+    .flex-item {
+        background-color: green;
+        color: white;
+        border: 1px solid green;
+        border-radius: 5px;
+        padding: 20px;
+    }
+
+    .flex-item:last-child {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        list-style-type: none;
+        margin: 0;
+    }
+}
+
+/* Part 2: Grid */
+.grid-container {
+    background-color: #eaeaea;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header"
+        "nav content content"
+        "nav footer footer";
+    gap: 10px;
+    padding: 20px;
+    div {
+        background-color: #1b51fd;
+        border-radius: 5px;
+        padding: 20px;
+    }
+    .grid-header {
+        grid-area: header;
+    }
+    .grid-nav {
+        grid-area: nav;
+    }
+    .grid-content {
+        grid-area: content;
+    }.grid-footer {
+        grid-area: footer;
+    }
+}
+/* Part 3: Position */
+.position-relative {
+    position: relative;
+    background-color: rgb(255, 234, 0);
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    .position-absolute {
+        position: absolute;
+        background-color: orangered;
+        color: white;
+        text-align: center;
+        padding: 15px 30px;
+        border-radius: 5px;
+        width: 70%;
+        margin: auto;
+        bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Part 1: Flexbox */
+    .flex-container {
+        .flex-item:last-child {
+            display: none;
+        }
+    }
+    /* Part 2: Grid */
+    .grid-container {
+        grid-template-areas:
+            "header"
+            "nav"
+            "content"
+            "footer";
+    }
+}

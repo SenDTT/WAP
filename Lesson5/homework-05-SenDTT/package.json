@@ -1,0 +1,16 @@
+{
+  "name": "homework-05-sendtt",
+  "version": "1.0.0",
+  "description": "[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/jGg_e8UY) [![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=16935543) ## CS472-Homework-05-Async ## Coding Exercise 01 Implement the code for `Meditation` class. The `start()` method prints a countdown every 1 second. To be used as follows: ```typescript const morning_meditation = new Meditation(5); morning_meditation.start(); console.log(`Start meditation`);",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.8.7",
+    "tsx": "^4.19.2"
+  }
+}

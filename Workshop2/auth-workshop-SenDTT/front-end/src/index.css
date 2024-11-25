@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-mono bg-gradient-to-r bg-blend-soft-light bg-slate-200;
+}
+a {
+  @apply underline text-blue-600 hover:text-blue-800;
+}

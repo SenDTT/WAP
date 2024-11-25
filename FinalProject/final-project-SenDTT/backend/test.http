@@ -1,0 +1,69 @@
+HEAD http://localhost:3000/
+
+###
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email": "admin@example.com",
+    "password": "abcd0789"
+}
+###
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email": "admin@example.com",
+    "fullname": "admin",
+    "password": "abcd0789"
+}
+
+###
+GET http://localhost:3000/categories/?limit=100&offset=0
+
+###
+GET http://localhost:3000/policies/?limit=13&offset=0
+authentication: eyJlbWFpbCI6ImFkbWluQGV4YW1wbGUuY29tIn0=.fa08d26fcc5c5307e68495eead53e555a3fe3a87af839df5d6746bc7f56740e2
+
+###
+POST http://localhost:3000/policies
+authentication: eyJlbWFpbCI6ImFkbWluQGV4YW1wbGUuY29tIn0=.fa08d26fcc5c5307e68495eead53e555a3fe3a87af839df5d6746bc7f56740e2
+Content-Type: application/json
+
+{
+    "title": "Hello World!",
+    "body": "<h1><strong>The Isolum Test</strong></h1><ul><li><strong>Simplicity</strong>: <em>Minimizes distractions by focusing only on essential tasks.</em></li><li><strong>Clarity</strong>: <em>Presents information in a visually clean and structured way.</em></li><li><strong>Efficiency</strong>: <em>Streamlines processes to save time and energy.</em></li></ul><blockquote>\"The effectiveness of the Isolum Test lies in its adaptability to diverse needs.\"</blockquote><p>Whether you're a student, professional, or creative, <strong>this tool empowers you</strong> to achieve your goals more effectively.</p>",
+    "category_id": 2,
+    "owner_id": 5
+}
+
+###
+DELETE http://localhost:3000/policies/14
+
+
+###
+PUT http://localhost:3000/policies/9
+Content-Type: application/json
+
+{
+    "title": "Hello World!",
+    "body": "<h1><strong>The Isolum Test</strong></h1><ul><li><strong>Simplicity</strong>: <em>Minimizes distractions by focusing only on essential tasks.</em></li><li><strong>Clarity</strong>: <em>Presents information in a visually clean and structured way.</em></li><li><strong>Efficiency</strong>: <em>Streamlines processes to save time and energy.</em></li></ul><blockquote>\"The effectiveness of the Isolum Test lies in its adaptability to diverse needs.\"</blockquote><p>Whether you're a student, professional, or creative, <strong>this tool empowers you</strong> to achieve your goals more effectively.</p>",
+    "category_id": 3,
+    "owner_id": 1
+}
+###
+GET http://localhost:3000/policies/3
+authentication: eyJlbWFpbCI6ImFkbWluQGV4YW1wbGUuY29tIn0=.fa08d26fcc5c5307e68495eead53e555a3fe3a87af839df5d6746bc7f56740e2
+
+### 
+POST http://localhost:3000/votes
+Content-Type: application/json
+
+{
+    "type": "policy",
+    "associate_id": 2,
+    "user_id": 7
+}
+
+### 
+DELETE  http://localhost:3000/votes/policy/2/7

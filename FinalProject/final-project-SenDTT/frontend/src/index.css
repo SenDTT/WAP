@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.react-date-picker__wrapper {
+  @apply flex flex-row items-center gap-2;
+}
+
+.react-date-picker__inputGroup,
+.react-date-picker__inputGroup__year {
+  @apply w-20;
+}

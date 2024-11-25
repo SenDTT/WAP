@@ -1,0 +1,4 @@
+REACT
+- DOM
+- Component: has state & prop.
+- The setState method in React is asynchronous
